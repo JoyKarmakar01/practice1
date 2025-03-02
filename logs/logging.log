@@ -320,3 +320,180 @@ x==========x]
 [2025-03-02 11:55:46,442: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
 
 x==========x]
+[2025-03-02 15:33:43,244: INFO: common: Yaml File: config\config.yaml loaded successfully]
+[2025-03-02 15:33:43,251: INFO: common: Yaml File: params.yaml loaded successfully]
+[2025-03-02 15:33:43,258: INFO: common: Yaml File: schema.yaml loaded successfully]
+[2025-03-02 15:33:43,262: INFO: common: Created Directory at: artifacts]
+[2025-03-02 15:34:23,749: INFO: common: Yaml File: config\config.yaml loaded successfully]
+[2025-03-02 15:34:23,752: INFO: common: Yaml File: params.yaml loaded successfully]
+[2025-03-02 15:34:23,757: INFO: common: Yaml File: schema.yaml loaded successfully]
+[2025-03-02 15:34:23,759: INFO: common: Created Directory at: artifacts]
+[2025-03-02 15:34:23,760: INFO: common: Created Directory at: artifacts/data_transformation]
+[2025-03-02 15:34:23,837: INFO: 3591605836: Splitted data into training and test sets..]
+[2025-03-02 15:34:23,838: INFO: 3591605836: (1199, 12)]
+[2025-03-02 15:34:23,839: INFO: 3591605836: (400, 12)]
+[2025-03-02 15:57:42,952: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-02 15:57:42,965: INFO: common: Yaml File: config\config.yaml loaded successfully]
+[2025-03-02 15:57:42,967: INFO: common: Yaml File: params.yaml loaded successfully]
+[2025-03-02 15:57:42,970: INFO: common: Yaml File: schema.yaml loaded successfully]
+[2025-03-02 15:57:42,970: INFO: common: Created Directory at: artifacts]
+[2025-03-02 15:57:42,971: INFO: common: Created Directory at: artifacts/data_ingestion]
+[2025-03-02 15:57:43,021: ERROR: main: <urlopen error [Errno 11001] getaddrinfo failed>]
+Traceback (most recent call last):
+  File "E:\Practice\Practice end to end project\practice1\venv\lib\urllib\request.py", line 1348, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "E:\Practice\Practice end to end project\practice1\venv\lib\http\client.py", line 1276, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "E:\Practice\Practice end to end project\practice1\venv\lib\http\client.py", line 1322, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "E:\Practice\Practice end to end project\practice1\venv\lib\http\client.py", line 1271, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "E:\Practice\Practice end to end project\practice1\venv\lib\http\client.py", line 1031, in _send_output
+    self.send(msg)
+  File "E:\Practice\Practice end to end project\practice1\venv\lib\http\client.py", line 969, in send
+    self.connect()
+  File "E:\Practice\Practice end to end project\practice1\venv\lib\http\client.py", line 1441, in connect
+    super().connect()
+  File "E:\Practice\Practice end to end project\practice1\venv\lib\http\client.py", line 940, in connect
+    self.sock = self._create_connection(
+  File "E:\Practice\Practice end to end project\practice1\venv\lib\socket.py", line 824, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "E:\Practice\Practice end to end project\practice1\venv\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Practice\Practice end to end project\practice1\main.py", line 10, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "E:\Practice\Practice end to end project\practice1\src\datascience\pipeline\data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion.download_file()
+  File "E:\Practice\Practice end to end project\practice1\src\datascience\components\data_ingestion.py", line 17, in download_file
+    filename, headers = request.urlretrieve(
+  File "E:\Practice\Practice end to end project\practice1\venv\lib\urllib\request.py", line 241, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+  File "E:\Practice\Practice end to end project\practice1\venv\lib\urllib\request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "E:\Practice\Practice end to end project\practice1\venv\lib\urllib\request.py", line 519, in open
+    response = self._open(req, data)
+  File "E:\Practice\Practice end to end project\practice1\venv\lib\urllib\request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "E:\Practice\Practice end to end project\practice1\venv\lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+  File "E:\Practice\Practice end to end project\practice1\venv\lib\urllib\request.py", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File "E:\Practice\Practice end to end project\practice1\venv\lib\urllib\request.py", line 1351, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+[2025-03-02 15:58:57,946: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-02 15:58:57,950: INFO: common: Yaml File: config\config.yaml loaded successfully]
+[2025-03-02 15:58:57,951: INFO: common: Yaml File: params.yaml loaded successfully]
+[2025-03-02 15:58:57,954: INFO: common: Yaml File: schema.yaml loaded successfully]
+[2025-03-02 15:58:57,955: INFO: common: Created Directory at: artifacts]
+[2025-03-02 15:58:57,956: INFO: common: Created Directory at: artifacts/data_ingestion]
+[2025-03-02 15:58:57,989: ERROR: main: <urlopen error [Errno 11001] getaddrinfo failed>]
+Traceback (most recent call last):
+  File "E:\Practice\Practice end to end project\practice1\venv\lib\urllib\request.py", line 1348, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "E:\Practice\Practice end to end project\practice1\venv\lib\http\client.py", line 1276, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "E:\Practice\Practice end to end project\practice1\venv\lib\http\client.py", line 1322, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "E:\Practice\Practice end to end project\practice1\venv\lib\http\client.py", line 1271, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "E:\Practice\Practice end to end project\practice1\venv\lib\http\client.py", line 1031, in _send_output
+    self.send(msg)
+  File "E:\Practice\Practice end to end project\practice1\venv\lib\http\client.py", line 969, in send
+    self.connect()
+  File "E:\Practice\Practice end to end project\practice1\venv\lib\http\client.py", line 1441, in connect
+    super().connect()
+  File "E:\Practice\Practice end to end project\practice1\venv\lib\http\client.py", line 940, in connect
+    self.sock = self._create_connection(
+  File "E:\Practice\Practice end to end project\practice1\venv\lib\socket.py", line 824, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "E:\Practice\Practice end to end project\practice1\venv\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Practice\Practice end to end project\practice1\main.py", line 10, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "E:\Practice\Practice end to end project\practice1\src\datascience\pipeline\data_ingestion_pipeline.py", line 15, in initiate_data_ingestion
+    data_ingestion.download_file()
+  File "E:\Practice\Practice end to end project\practice1\src\datascience\components\data_ingestion.py", line 17, in download_file
+    filename, headers = request.urlretrieve(
+  File "E:\Practice\Practice end to end project\practice1\venv\lib\urllib\request.py", line 241, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+  File "E:\Practice\Practice end to end project\practice1\venv\lib\urllib\request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+  File "E:\Practice\Practice end to end project\practice1\venv\lib\urllib\request.py", line 519, in open
+    response = self._open(req, data)
+  File "E:\Practice\Practice end to end project\practice1\venv\lib\urllib\request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "E:\Practice\Practice end to end project\practice1\venv\lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+  File "E:\Practice\Practice end to end project\practice1\venv\lib\urllib\request.py", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File "E:\Practice\Practice end to end project\practice1\venv\lib\urllib\request.py", line 1351, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+[2025-03-02 18:28:44,414: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-02 18:28:44,422: INFO: common: Yaml File: config\config.yaml loaded successfully]
+[2025-03-02 18:28:44,427: INFO: common: Yaml File: params.yaml loaded successfully]
+[2025-03-02 18:28:44,435: INFO: common: Yaml File: schema.yaml loaded successfully]
+[2025-03-02 18:28:44,437: INFO: common: Created Directory at: artifacts]
+[2025-03-02 18:28:44,439: INFO: common: Created Directory at: artifacts/data_ingestion]
+[2025-03-02 18:28:46,075: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 1656:E2004:5A2B46:F27368:67C45605
+Accept-Ranges: bytes
+Date: Sun, 02 Mar 2025 12:58:45 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100025-HYD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1740920325.158500,VS0,VE285
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: fc3af6126b132080fb5769586aaf6b0655a34477
+Expires: Sun, 02 Mar 2025 13:03:45 GMT
+Source-Age: 0
+
+]
+[2025-03-02 18:28:46,121: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-03-02 18:28:46,122: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-03-02 18:28:46,129: INFO: common: Yaml File: config\config.yaml loaded successfully]
+[2025-03-02 18:28:46,132: INFO: common: Yaml File: params.yaml loaded successfully]
+[2025-03-02 18:28:46,141: INFO: common: Yaml File: schema.yaml loaded successfully]
+[2025-03-02 18:28:46,142: INFO: common: Created Directory at: artifacts]
+[2025-03-02 18:28:46,144: INFO: common: Created Directory at: artifacts/data_validation]
+[2025-03-02 18:28:46,199: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-03-02 18:28:46,200: INFO: main: >>>>>> stage Data Transformation Stage started <<<<<<]
+[2025-03-02 18:28:46,223: INFO: common: Yaml File: config\config.yaml loaded successfully]
+[2025-03-02 18:28:46,226: INFO: common: Yaml File: params.yaml loaded successfully]
+[2025-03-02 18:28:46,232: INFO: common: Yaml File: schema.yaml loaded successfully]
+[2025-03-02 18:28:46,235: INFO: common: Created Directory at: artifacts]
+[2025-03-02 18:28:46,236: INFO: common: Created Directory at: artifacts/data_transformation]
+[2025-03-02 18:28:46,294: INFO: data_transformation: Splitted data into training and test sets..]
+[2025-03-02 18:28:46,294: INFO: data_transformation: (1199, 12)]
+[2025-03-02 18:28:46,295: INFO: data_transformation: (400, 12)]
+[2025-03-02 18:28:46,297: INFO: main: >>>>>> stage Data Transformation Stage completed <<<<<<
+
+x==========x]
