@@ -497,3 +497,74 @@ x==========x]
 [2025-03-02 18:28:46,297: INFO: main: >>>>>> stage Data Transformation Stage completed <<<<<<
 
 x==========x]
+[2025-03-03 12:08:26,330: INFO: common: Yaml File: config\config.yaml loaded successfully]
+[2025-03-03 12:08:26,337: INFO: common: Yaml File: params.yaml loaded successfully]
+[2025-03-03 12:08:26,351: INFO: common: Yaml File: schema.yaml loaded successfully]
+[2025-03-03 12:08:26,354: INFO: common: Created Directory at: artifacts]
+[2025-03-03 12:08:26,356: INFO: common: Created Directory at: artifacts/model_trainer]
+[2025-03-03 12:16:45,242: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-03 12:16:45,247: INFO: common: Yaml File: config\config.yaml loaded successfully]
+[2025-03-03 12:16:45,249: INFO: common: Yaml File: params.yaml loaded successfully]
+[2025-03-03 12:16:45,252: INFO: common: Yaml File: schema.yaml loaded successfully]
+[2025-03-03 12:16:45,253: INFO: common: Created Directory at: artifacts]
+[2025-03-03 12:16:45,254: INFO: common: Created Directory at: artifacts/data_ingestion]
+[2025-03-03 12:16:46,570: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 5129:1F7638:1C49DE:5541E2:67C55055
+Accept-Ranges: bytes
+Date: Mon, 03 Mar 2025 06:46:46 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100025-HYD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1740984406.954811,VS0,VE282
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 11b769e83cad618fe9cb23493f1251754f001ac8
+Expires: Mon, 03 Mar 2025 06:51:46 GMT
+Source-Age: 0
+
+]
+[2025-03-03 12:16:46,591: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-03-03 12:16:46,592: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-03-03 12:16:46,597: INFO: common: Yaml File: config\config.yaml loaded successfully]
+[2025-03-03 12:16:46,599: INFO: common: Yaml File: params.yaml loaded successfully]
+[2025-03-03 12:16:46,601: INFO: common: Yaml File: schema.yaml loaded successfully]
+[2025-03-03 12:16:46,603: INFO: common: Created Directory at: artifacts]
+[2025-03-03 12:16:46,605: INFO: common: Created Directory at: artifacts/data_validation]
+[2025-03-03 12:16:46,631: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-03-03 12:16:46,632: INFO: main: >>>>>> stage Data Transformation Stage started <<<<<<]
+[2025-03-03 12:16:46,645: INFO: common: Yaml File: config\config.yaml loaded successfully]
+[2025-03-03 12:16:46,647: INFO: common: Yaml File: params.yaml loaded successfully]
+[2025-03-03 12:16:46,649: INFO: common: Yaml File: schema.yaml loaded successfully]
+[2025-03-03 12:16:46,651: INFO: common: Created Directory at: artifacts]
+[2025-03-03 12:16:46,652: INFO: common: Created Directory at: artifacts/data_transformation]
+[2025-03-03 12:16:46,689: INFO: data_transformation: Splitted data into training and test sets..]
+[2025-03-03 12:16:46,689: INFO: data_transformation: (1199, 12)]
+[2025-03-03 12:16:46,689: INFO: data_transformation: (400, 12)]
+[2025-03-03 12:16:46,690: INFO: main: >>>>>> stage Data Transformation Stage completed <<<<<<
+
+x==========x]
+[2025-03-03 12:16:46,691: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-03-03 12:16:46,695: INFO: common: Yaml File: config\config.yaml loaded successfully]
+[2025-03-03 12:16:46,698: INFO: common: Yaml File: params.yaml loaded successfully]
+[2025-03-03 12:16:46,703: INFO: common: Yaml File: schema.yaml loaded successfully]
+[2025-03-03 12:16:46,704: INFO: common: Created Directory at: artifacts]
+[2025-03-03 12:16:46,706: INFO: common: Created Directory at: artifacts/model_trainer]
+[2025-03-03 12:16:46,752: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
