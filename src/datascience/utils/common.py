@@ -27,3 +27,57 @@ def create_directories(path_to_directories: list, verbose = True):
         os.makedirs(path, exist_ok=True)
         if verbose:
             logger.info(f"Created Directory at: {path}")
+
+
+@ensure_annotations
+def save_json(path: Path, data: dict):
+    """save json data
+
+    Args:
+        path (Path): path to json file
+        data (dict): data to be saved in json file
+    """
+    with open(path, "w") as f:
+        json.dump(data, f, indent=4)
+
+    logger.info(f"Json File saved at: {path}")
+
+@ensure_annotations
+def load_json(path: Path) -> ConfigBox:
+    """load json files data
+
+    Args:
+        path (Path): path to json file
+
+    Returns:
+        ConfigBox: data as class attributes instead of dict
+    """
+    with open(path) as f:
+        content = json.load(f)
+    logger.info(f"Json file loaded successfully from: {path}")
+    return ConfigBox(content)
+
+@ensure_annotations
+def save_bin(data: Any, path: Path):
+    """save binary file
+
+    Args:
+        data (Any): data to be saved as binary
+        path (Path): path to binary file
+    """
+    joblib.dump(value=data, filename=path)
+    logger.info(f"Binary File Saved at: {path}")
+
+@ensure_annotations
+def load_bin(path: Path) -> Any:
+    """load binary data
+
+    Args:
+        path (Path): path to binary file
+
+    Returns:
+        Any: object stored in the file
+    """
+    data = joblib.load(path)
+    logger.info(f"Binary File loaded from: {path}")
+    return data
